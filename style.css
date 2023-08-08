@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    background-color: #002333;
+}
+.container{
+    width: 50vw;
+    height: 60vh;
+    border-radius: 12px;
+    padding: 20px 40px;
+    box-shadow: 0px 0px 0px, 0.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #DEEFE7;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 0px 35px;
+    
+}
+#inp-country{
+    flex-grow: 2;
+    border: none;
+    background-color: #DEEFE7;
+    border-bottom: 2px solid #002333;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    caret-color: #002333;
+}
+#inp-country::placeholder{
+    color: #0b425b;
+}
+
+
+
+#search-btn{
+    border: none;
+    border-radius: 25px;
+    padding:12px 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: #002333;
+    background-color: #DEEFE7;
+    border: 1px solid #002333;
+}
+
+#search-btn:hover{
+    background-color: #002333;
+    color: #DEEFE7;
+}
+#result{
+    margin-top: 35px;
+}
+.flag-img{
+    display: block;
+    width: 20%;
+    margin: 30px auto 16px auto;
+    
+}
+
+#result h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #002333;
+    margin: 35px 0px;
+    letter-spacing: 2px;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.data-wrapper h4{
+    font-weight: 500;
+    color: #002333;
+}
+
+.data-wrapper span{
+    color: #46545c;
+}
+
+@media screen and (max-width: 480px) {
+    .container{
+    width: 80vw;
+    height: 60vh;
+    padding: 30px 5px;
+    }
+    .form{
+        
+    }
+    #inp-country{
+        width: 150px;
+    }
+    #search-btn{
+        padding:10px 20px;
+        font-size: 16px;
+    }
+    .flag-img{
+        width: 25%;
+    }
+    .wrapper{
+        flex-direction: column;
+    }
+    #result h2{
+        margin: 25px 0px 45px 0px;
+    }
+    #result{
+        margin: 35px 0px;
+        padding: 0px 10px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        width: 80vw;
+        height: 60vh;
+        padding: 30px 5px;
+    }
+    #result{
+        padding: 0px 20px;
+    }
+}
